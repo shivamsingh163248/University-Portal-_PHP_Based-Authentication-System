@@ -85,7 +85,7 @@ if(empty($err))
 <body>
     <div class="topnav" id="nevigation">
         <a href="#home" class="active">Home</a>
-        <a href="#services" class="services">services</a>
+        <a href="service.php" class="services">services</a>
         <a href="#contact" class="contacts">contacts</a>
         <div class="dropdown">
             <button class="dropbtn">services
@@ -143,7 +143,7 @@ if(empty($err))
 
 
                             <div class="container-signin">
-                                <p>You have Not Account Creat here? <a href="register.php">Register</a>.</p>
+                                <p>You have Not Account Creat here? <a href="index.php">Register</a>.</p>
                             </div>
                         </div>
                 </form>
