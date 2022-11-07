@@ -55,7 +55,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
   <img src="https://wallpaperaccess.com/full/497913.jpg" style="width:100%">
-  <div class="text">Caption Text</div>
+  <div class="text">this is the my name shivam</div>
 </div>
 
 <div class="mySlides fade">
