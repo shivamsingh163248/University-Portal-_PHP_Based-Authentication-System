@@ -7,6 +7,7 @@ if(isset($_SESSION['username']))
 {
     header("location: welcome.php");
     exit;
+
 }
 require_once "config.php";
 
@@ -107,11 +108,11 @@ if(empty($err))
             <div class="column left" style="background-color:inherit;">
 
 
-                <img src="logo.png" alt="logo" width="200" height="200" id="sectionlogo">
+                <img src="logo.png" alt="logo" width="100" height="100" id="sectionlogo">
                 <div class="linesize">
-                    <h1 id="h1font">Zero-One</h1>
+                    <h1 id="h1font">VBSPU</h1>
                      <br>
-                     <h1 id="organization">Organization</h1>
+                     <h1 id="organization">purvanchal university</h1>
                 </div>
                 <hr>
                 <h1>
@@ -126,7 +127,7 @@ if(empty($err))
                     <div class="container">
                         <div class="line1">
                             <h1 style="font-size: 40px;">Log In</h1>
-                            <p>Welocome in Zero-One Organization</p>
+                            <p>Welocome in vbspu</p>
                             <hr>
 
                             <label for="email"><b>Email</b></label>
