@@ -44,6 +44,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     </div>
     <a href="#call">call</a>
     <a id="nav_link"><?php echo "Welcome : " . $_SESSION['username'] ?></a>
+    
    
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 
@@ -57,6 +58,8 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
   <img src="https://wallpaperaccess.com/full/497913.jpg" style="width:100%">
   <div class="text">this is the my name shivam</div>
 </div>
+
+
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 3</div>
@@ -85,6 +88,47 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
   </section>
 
  
+
+<p>
+
+<?php 
+
+// Include configuration file  
+require ('config.php');
+
+$user_name_this =  $_SESSION['username']; 
+
+
+ 
+//Select query 
+$select = "SELECT * FROM vbspu WHERE username  = '$user_name_this' " ;
+$result = $conn->query($select);
+?> 
+
+<p>
+
+
+<?php   
+			// Loop the employee data
+				echo "this is the print name ";
+					
+
+                    if ($row = $result->fetch_object())
+                   
+                    
+                    {
+                        echo $row->yourname ;
+      
+                    }
+?>
+
+</p>
+
+
+
+
+
+</p>
 
 
 </body>
