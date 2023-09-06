@@ -12,84 +12,65 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 <!DOCTYPE html>
 <html lang="en">
 
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>zero one organization</title>
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="login.css">
-  <link rel="stylesheet" href="section1.css">
-  <link rel="stylesheet" href="welcome.css">
-  <script src="main.js"></script>
+    <title> Ionic SmartWatch - LandingPage</title>
+    <link rel="stylesheet" href="welcome.css">
+    <script src="https://kit.fontawesome.com/a2291e6430.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+
+    
+ 
+
 
 </head>
 
 <body>
-  <div class="topnav" id="nevigation">
-    <a href="#home" class="active">Home</a>
-    <a href="login.php" class="login">services</a>
-    <a href="register.php" class="register">contacts</a>
-    <div class="dropdown">
-      <button class="dropbtn">services
-        <i class="fas fa-angle-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="logout.php">logout</a>
-        <a href="#">link2</a>
-        <a href="#">link 3</a>
-      </div>
+    <div class="container">
+        <header class="nav" id="and_menor">
+            <div class="nav-container-content">
+                <nav class="navbar">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Products</a>
+                    <a href="#">Buy Now</a>
+                </nav>
+            </div>
+        </header>
 
+        <div class="section-container-items">
+            <div class="section-items-col-12">
+                <div class="section">
+                    <h1>Smartwatch fitbit ionic.</h1>
+                    <h3>Altimeter, Gyroscope, GPS, Heart Rate Monitor</h3>
+                    <a href="#"><button><i class="fas fa-shopping-cart"></i>Buy now for $244.60</button></a>
+                </div>
+
+                <div class="alta">
+                    <span class="alta-title">Find Yours</span>
+                    <img
+                        src="https://static-geektopia.com/storage/geek/products/fitbit/versa/versa-black-black-aluminum-0-4d70f54ede557d65061a77d521339857.png">
+                </div>
+            </div>
+        </div>
     </div>
-    <a href="#call">call</a>
-    <a id="nav_link"><?php echo "Welcome : " . $_SESSION['username'] ?></a>
-    
-   
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</body>
 
-  </div>
-  <section class="section1">
-  <div class="slideshow-container">
-
-<!-- Full-width images with number and caption text -->
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="https://wallpaperaccess.com/full/497913.jpg" style="width:100%">
-  <div class="text">this is the my name shivam</div>
-</div>
+</html>
 
 
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="https://wallpaperaccess.com/full/497915.jpg" style="width:100%">
-  <div class="text">Caption Two</div>
-</div>
 
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="https://wallpaperaccess.com/full/497918.jpg" style="width:100%">
-  <div class="text">Caption Three</div>
-</div>
 
-<!-- Next and previous buttons -->
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
 
-<!-- The dots/circles -->
-<div style="text-align:center">
-<span class="dot" onclick="currentSlide(1)"></span>
-<span class="dot" onclick="currentSlide(2)"></span>
-<span class="dot" onclick="currentSlide(3)"></span>
-</div>
-  </section>
-
- 
-
-<p>
 
 <?php 
 
