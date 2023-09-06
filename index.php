@@ -147,7 +147,7 @@ mysqli_close($conn);
                             </button>
                             <div class="collapse navbar-collapse" id="beeToggler">
                                 <ul class="navbar-nav ml-auto ">
-                                    <li><a href="login.php">Home</a></li>
+                                    <li><a href="login.php">Log In</a></li>
                                     &nbsp;
                                     <li><a href="./project.html">Project</a></li>
                                     &nbsp;

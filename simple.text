@@ -1,1 +1,40 @@
 this is the file of the text file for the chaking the gitlab reposetary how it is the work 
+
+            </div>
+            <div class="column right" style="background-color: inherit;">
+
+                <form action="" method="POST">
+                    <div class="container">
+                        <div class="line1">
+                            <h1 style="font-size: 40px;">Log In</h1>
+                            <p>Welocome in vbspu</p>
+                            <hr>
+
+                            <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="username" id="email" required>
+
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="password" id="psw" required>
+
+                            
+                            <hr>
+                            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+                            <button type="submit" class="registerbtn">Login</button>
+
+
+                            <div class="container-signin">
+                                <p>You have Not Account Creat here? <a href="index.php">Register</a>.</p>
+                            </div>
+                        </div>
+                </form>
+            </div>
+    </section>
+    <section class="section2">
+        <img src="loo.png" alt="">
+    </section>
+
+
+</body>
+
+</html>

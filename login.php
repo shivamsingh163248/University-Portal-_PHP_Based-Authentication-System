@@ -80,29 +80,35 @@ if(empty($err))
 </head>
 <body>
 <!-- partial:index.partial.html -->
+
+
 <div class="container">
 	<div class="screen">
 		<div class="screen__content">
-			<form class="login">
+			<form class="login" action="" method="POST">
 				<div class="login__field">
 					<i class="login__icon fas fa-user"></i>
-					<input type="text" class="login__input" placeholder="User name / Email">
+					<input type="text" class="login__input" placeholder="User name / Email" name="username">
 				</div>
 				<div class="login__field">
 					<i class="login__icon fas fa-lock"></i>
-					<input type="password" class="login__input" placeholder="Password">
+					<input type="password" class="login__input" placeholder="Password" name="password">
 				</div>
 				<button class="button login__submit">
 					<span class="button__text">Log In Now</span>
 					<i class="button__icon fas fa-chevron-right"></i>
 				</button>	
-                <button class="button homeback">
+              				
+			</form>
+            <a href="index.php">
+            <button class=" button homeback">
+               
 					<span class="button__text">HOME</span>
 					<i class="button__icon fas fa-chevron-right"></i>
-				</button>				
-			</form>
+				</button>
+                </a>
 			<div class="social-login">
-				<h3>Show the link</h3>
+				
 				<div class="social-icons">
 					<a href="#" class="social-login__icon fab fa-instagram"></a>
 					<a href="#" class="social-login__icon fab fa-facebook"></a>
