@@ -26,9 +26,17 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
   <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
   <link rel="stylesheet" href="style.css" /> 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
-//Body Section
-<script src="usincplyaer.js"></script>
-<link rel="stylesheet" href="musicplayer.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <!-- Link to css -->
+    <link rel="stylesheet" href="musicstyles.css">
+    <!-- link to bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
 
 </head>
 
@@ -96,37 +104,46 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 
 <h1 class="massageE">SONG FOR YOU </h1>
 
+<div class="music">
+<div id="containerse">
+        
+        <div id="img">
+            <img id="track_cover" src="images/music.png" alt="disc" width="250">
+        </div>
+        <div id="title">
+            <h3 id="track_title">track title</h3>
+            <p id="track_artist">track artist</p>
+        </div>
+        <div id="music_time">
+            <p id="track_current_time"><span id="current_time_mins">00</span>:<span id="current_time_secs">00</span></p>
+            <input type="range" name="range" class="slider" onchange="seek()" id="range" min="0" max="300" value="0">
+            <p id="track_fulltime"><span id="track_mins">00</span>:<span id="track_secs">00</span></p>
+        </div>
+        <div id="music_functions">
+            <div class="function">
+                <i id="prev" onclick="prev()" class="bi bi-skip-backward-circle"></i>
+            </div>
+            <div class="function">
+                <i id="play_pause" onclick="play_pause()" class="bi bi-play-circle"></i>
+            </div>
+            <div class="function">
+                <i id="next" onclick="next()" class="bi bi-skip-forward-circle"></i>
 
-
-<h1>Music Player</h1>
-<div class="music-container" id="music-container">
-<div class="music-info">
-<h4 class="title" id="title"></h4>
-<div class="progress-container" id="progress-container">
-<div class="progress" id="progress"></div>
+            </div>
+        </div>
+        <div id="volume">
+            <i class="bi bi-volume-down"></i>
+            <input type="range" name="volume" onchange="volume()" class="slider" value="8" id="vol" min="0" max="10">
+            <i class="bi bi-volume-up"></i>
+        </div>
+    </div>
+    
 </div>
-</div>
-<audio src="./music/heeriye.mp3" id="audio"></audio>
-<div class="img-container">
-<img src="./images/unnamed.png" alt="music-cover" id="cover" />
-</div>
-<div class="navigation">
-<button id="prev" class="action-btn">
-<i class="fa fa-backward" aria-hidden="true"></i>
-</button>
-<button id="play" class="action-btn action-btn-big">
-<i class="fa fa-play" aria-hidden="true"></i>
-</button>
-<button id="next" class="action-btn">
-<i class="fa fa-forward" aria-hidden="true"></i>
-</button>
-</div>
-</div>
-
-
-
+   
 
 </section>
+
+<section> <p>DON'T FORGOT TO LOGOUT</p></section>
 
 
 
@@ -134,6 +151,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 
 
 </body>
+<script src="app.js" charset="utf-8"></script>
 <script src="welce.js"></script>
 
 </html>
