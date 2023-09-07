@@ -9,128 +9,131 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>zero one organization</title>
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="login.css">
-  <link rel="stylesheet" href="section1.css">
-  <link rel="stylesheet" href="welcome.css">
-  <script src="main.js"></script>
+  <title> Ionic SmartWatch - LandingPage</title>
+  <link rel="stylesheet" href="wel.css">
+  <link rel="stylesheet" href="welcomesec2.css">
+  <script src="https://kit.fontawesome.com/a2291e6430.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="style.css" /> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+//Body Section
+<script src="usincplyaer.js"></script>
+<link rel="stylesheet" href="musicplayer.css">
 
 </head>
 
 <body>
-  <div class="topnav" id="nevigation">
-    <a href="#home" class="active">Home</a>
-    <a href="login.php" class="login">services</a>
-    <a href="register.php" class="register">contacts</a>
-    <div class="dropdown">
-      <button class="dropbtn">services
-        <i class="fas fa-angle-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="logout.php">logout</a>
-        <a href="#">link2</a>
-        <a href="#">link 3</a>
+
+
+ <section class="header">
+
+  <div class="container">
+    <header class="nav" id="and_menor">
+      <div class="nav-container-content">
+        <nav class="navbar">
+          <a href="welcome.php">Home</a>
+          <a href=" ">Massage</a>
+          <a href="logout.php">Log Out</a>
+        </nav>
       </div>
+    </header>
 
+
+    <div class="section-container-items">
+      <div class="section-items-col-12">
+        <div class="section">
+
+  <h1>Hi !</h1>
+
+          <h1>
+            <a href="" class="typewrite" data-period="2000" data-type='[ "itisha ", "now i will connect to you", "always something update for you ", "check website reguraly" ]'>
+              <span class="wrap"></span>
+            </a>
+          </h1>
+          <h3>congrualtion if you are present hear </h3>
+
+
+
+
+
+          <a href="#"><button><i class="fa fa-chevron-down">  Down  </i></button></a>
+       
+        </div>
+
+
+
+      </div>
     </div>
-    <a href="#call">call</a>
-    <a id="nav_link"><?php echo "Welcome : " . $_SESSION['username'] ?></a>
-    
-   
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-
   </div>
-  <section class="section1">
-  <div class="slideshow-container">
+ </section>
 
-<!-- Full-width images with number and caption text -->
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="https://wallpaperaccess.com/full/497913.jpg" style="width:100%">
-  <div class="text">this is the my name shivam</div>
+
+<section class="welcomesection2">
+
+
+<h1 class="massage">Massage </h1>
+
+  <div  id="typedtext" > </div>
+
+
+
+
+</section>
+
+
+
+<section class="thirdsecton">
+
+<h1 class="massageE">SONG FOR YOU </h1>
+
+
+
+<h1>Music Player</h1>
+<div class="music-container" id="music-container">
+<div class="music-info">
+<h4 class="title" id="title"></h4>
+<div class="progress-container" id="progress-container">
+<div class="progress" id="progress"></div>
+</div>
+</div>
+<audio src="./music/heeriye.mp3" id="audio"></audio>
+<div class="img-container">
+<img src="./images/unnamed.png" alt="music-cover" id="cover" />
+</div>
+<div class="navigation">
+<button id="prev" class="action-btn">
+<i class="fa fa-backward" aria-hidden="true"></i>
+</button>
+<button id="play" class="action-btn action-btn-big">
+<i class="fa fa-play" aria-hidden="true"></i>
+</button>
+<button id="next" class="action-btn">
+<i class="fa fa-forward" aria-hidden="true"></i>
+</button>
+</div>
 </div>
 
 
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="https://wallpaperaccess.com/full/497915.jpg" style="width:100%">
-  <div class="text">Caption Two</div>
-</div>
 
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="https://wallpaperaccess.com/full/497918.jpg" style="width:100%">
-  <div class="text">Caption Three</div>
-</div>
-
-<!-- Next and previous buttons -->
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-<!-- The dots/circles -->
-<div style="text-align:center">
-<span class="dot" onclick="currentSlide(1)"></span>
-<span class="dot" onclick="currentSlide(2)"></span>
-<span class="dot" onclick="currentSlide(3)"></span>
-</div>
-  </section>
-
- 
-
-<p>
-
-<?php 
-
-// Include configuration file  
-require ('config.php');
-
-$user_name_this =  $_SESSION['username']; 
-
-
- 
-//Select query 
-$select = "SELECT * FROM vbspu WHERE username  = '$user_name_this' " ;
-$result = $conn->query($select);
-?> 
-
-<p>
-
-
-<?php   
-			// Loop the employee data
-				echo "this is the print name ";
-					
-
-                    if ($row = $result->fetch_object())
-                   
-                    
-                    {
-                        echo $row->yourname ;
-      
-                    }
-?>
-
-</p>
+</section>
 
 
 
 
-
-</p>
 
 
 </body>
-<script src="welcome.js"></script>
+<script src="welce.js"></script>
+
 </html>

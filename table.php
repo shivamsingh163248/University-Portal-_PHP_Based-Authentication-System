@@ -51,6 +51,8 @@ $result = $conn->query($select);
 				echo '</table>';
                         ?> 
 			</tbody> 
+
+			<p> this is the my name </p>
         </table> 
     </div> 
 </body> 

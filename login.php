@@ -67,94 +67,64 @@ if(empty($err))
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
 
+
+<!DOCTYPE html>
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zero one organization</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="login.css">
-    <link rel="stylesheet" href="section1.css">
-    <script src="main.js"></script>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Mohithpoojary</title>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css'>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css'><link rel="stylesheet" href="style.css">
 
 </head>
-
 <body>
-    <div class="topnav" id="nevigation">
-        <a href="#home" class="active">Home</a>
-        <a href="service.php" class="services">services</a>
-        <a href="#contact" class="contacts">contacts</a>
-        <div class="dropdown">
-            <button class="dropbtn">services
-                <i class="fas fa-angle-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="http://localhost/phpmyadmin/index.php?route=/sql&server=1&db=login&table=users&pos=0">deta base downlode</a>
-                <a href="#">link2</a>
-                <a href="#">link 3</a>
-            </div>
-
-        </div>
-        <a href="#call">call</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-
-    </div>
-    <section class="section1">
-        <div class="row">
-            <div class="column left" style="background-color:inherit;">
+<!-- partial:index.partial.html -->
 
 
-                <img src="logo.png" alt="logo" width="100" height="100" id="sectionlogo">
-                <div class="linesize">
-                    <h1 id="h1font">VBSPU</h1>
-                     <br>
-                     <h1 id="organization">purvanchal university</h1>
-                </div>
-                <hr>
-                <h1>
-                    <p>Our organization with you </p>
-                </h1>
-
-
-            </div>
-            <div class="column right" style="background-color: inherit;">
-
-                <form action="" method="POST">
-                    <div class="container">
-                        <div class="line1">
-                            <h1 style="font-size: 40px;">Log In</h1>
-                            <p>Welocome in vbspu</p>
-                            <hr>
-
-                            <label for="email"><b>Email</b></label>
-                            <input type="text" placeholder="Enter Email" name="username" id="email" required>
-
-                            <label for="psw"><b>Password</b></label>
-                            <input type="password" placeholder="Enter Password" name="password" id="psw" required>
-
-                            
-                            <hr>
-                            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-
-                            <button type="submit" class="registerbtn">Login</button>
-
-
-                            <div class="container-signin">
-                                <p>You have Not Account Creat here? <a href="index.php">Register</a>.</p>
-                            </div>
-                        </div>
-                </form>
-            </div>
-    </section>
-    <section class="section2">
-        <img src="loo.png" alt="">
-    </section>
-
-
+<div class="container">
+	<div class="screen">
+		<div class="screen__content">
+			<form class="login" action="" method="POST">
+				<div class="login__field">
+					<i class="login__icon fas fa-user"></i>
+					<input type="text" class="login__input" placeholder="User name / Email" name="username">
+				</div>
+				<div class="login__field">
+					<i class="login__icon fas fa-lock"></i>
+					<input type="password" class="login__input" placeholder="Password" name="password">
+				</div>
+				<button class="button login__submit">
+					<span class="button__text">Log In Now</span>
+					<i class="button__icon fas fa-chevron-right"></i>
+				</button>	
+              				
+			</form>
+            <a href="index.php">
+            <button class=" button homeback">
+               
+					<span class="button__text">HOME</span>
+					<i class="button__icon fas fa-chevron-right"></i>
+				</button>
+                </a>
+			<div class="social-login">
+				
+				<div class="social-icons">
+					<a href="#" class="social-login__icon fab fa-instagram"></a>
+					<a href="#" class="social-login__icon fab fa-facebook"></a>
+					<a href="#" class="social-login__icon fab fa-twitter"></a>
+				</div>
+			</div>
+		</div>
+		<div class="screen__background">
+			<span class="screen__background__shape screen__background__shape4"></span>
+			<span class="screen__background__shape screen__background__shape3"></span>		
+			<span class="screen__background__shape screen__background__shape2"></span>
+			<span class="screen__background__shape screen__background__shape1"></span>
+		</div>		
+	</div>
+</div>
+<!-- partial -->
+  
 </body>
-
 </html>
