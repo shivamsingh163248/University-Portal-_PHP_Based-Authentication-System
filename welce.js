@@ -61,8 +61,7 @@ window.onload = function() {
 
 
 var aText = new Array(
-  "hello itisha , i want you share something , i hope are you well", 
-  "I really miss i dont know why ? but its true , i will some this update for you "
+  "hello  komal , how are you ny to meet you , i hope you are wll right now thank you komal  "
   );
   var iSpeed = 100; // time delay of print out
   var iIndex = 0; // start printing array at this posision
