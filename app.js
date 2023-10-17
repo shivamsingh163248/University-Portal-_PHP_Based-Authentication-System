@@ -17,12 +17,7 @@ let isPlaying= false;
 let trackIndex= 0;
 
 const songs=[
-    {
-        artistName: "SHIVAM SINGH",
-        songName:"MISS YOU",
-        img:"images/itisha.png",
-        music:"musics/missyou.mp3"
-    },
+   
     {
         artistName: "Fireboy DML",
         songName:"Sofri",
