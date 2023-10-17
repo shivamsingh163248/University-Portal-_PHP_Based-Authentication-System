@@ -64,7 +64,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
   <h1>Hi !</h1>
 
           <h1>
-            <a href="" class="typewrite" data-period="2000" data-type='[ "itisha ", "now i will connect to you", "always something update for you ", "check website reguraly" ]'>
+            <a href="" class="typewrite" data-period="2000" data-type='[ "komal", "now i will connect to you", "always something update for you ", "check website reguraly" ]'>
               <span class="wrap"></span>
             </a>
           </h1>
